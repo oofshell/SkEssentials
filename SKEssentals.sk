@@ -1,0 +1,1926 @@
+# #######  #   #  #######
+# #        #  #   #
+# #        # #    #
+# #######  ##     #######
+#       #  # #    #
+#       #  #  #   #
+# #######  #   #  #######
+
+#             #    ########
+ #           #     #      #
+  #         #      #      #
+   #       #       ########
+    #     #               #
+     #   #                #
+      # #                 #
+       #           ########
+
+#TEAM
+#
+#- Sparky2you
+#- Coolboy67YT
+
+#------------------------------------------------------------------------------------------
+
+#CONFIGURATION
+#Here you can modify the Skript
+#Use the "&" or the "§" for the colors and the "%player%" for the name of the player
+#All of the options are all made to configurate the Skript to your likings
+#You can't add things you can only edit it example: BedrockMsg: (&c&lPlayer %player% is on Bedrock edition!) you can only change what I putted in the ()
+
+options:
+#______________________MESSAGES START
+#The message that pops in the chat when a bedrock player joins
+    BedrockMsg: &c&lPlayer %player% is on Bedrock edition!
+#The message when a player joins
+    JoinMsg: &a%player% Joined the server! ヅ
+#The message when a player joins for the first time
+    FirstJoinMsg: &aWelcome %player% to this server! ヅ
+#The message when a player leaves
+    QuitMsg: &c%player% Left the server. (◕︵◕)
+#______________________MESSAGES END
+#______________________BEDROCK NAME CHANGES START
+#BedrockNameChange is the change to see if the player is on bedrock or not example: ".Sparky2you" is on bedrock and "Sparky2you" is not
+    BedrockNameChange: .
+#______________________BEDROCK NAME CHANGES END
+#______________________CENCORED REPLACEMENT START
+#This is for the censored words it replaces the censored word for the "*"
+    Censored: *
+#______________________CENCORED REPLACEMENT END
+#______________________PLUGINS AND HELP MESSAGES START
+#What it sends to the player when he executes the command /plugin or /pl
+    PluginMsg: &cYou cant use this command sorry!
+#What it sends to the player when he executes the command /help or /?
+    HelpMsg: &cYou cant do this command sorry!
+#______________________PLUGINS AND HELP MESSAGES END
+#______________________LINKS START
+#For the /webiste
+    WebsiteLink: https://sites.google.com/view/hackercoder
+    WebsiteClick: Click here.
+#For the /discord
+    DiscordLink: https://discord.gg/Vs7SkezWCa
+    DiscordClick: Click here.
+#______________________LINKS END
+#______________________TAB START
+#Tab
+#Use the %loop-player% instead of %player% and use the %nl% to go to next line
+    TabHeader: Server name
+    TabFooter: &b&lInformation;%nl%&2Name: %loop-player%%nl%&2Balance: %{Essentials::Economy::%loop-player%}%
+#______________________TAB END
+#______________________SCOREBOARD START
+#The scoreboard
+#Here please use %loop-player% instead of %player% to show the player's name
+    Title: &6&lServer name
+    Line1: &bProfile;
+    Line2: &b↓
+    Line3: &bPlayer = %loop-player%
+    Line4: &bBalance = %{Essentials::Economy::%loop-player%}%
+    Line5: &cUse /sell
+    Line6: &bLevel: &2%{Essentials::Level::%loop-player%}%
+    Line7: |
+    Line8: |
+#______________________SCOREBOARD END
+#______________________BOSSBAR START
+#BossBar on join
+    BossBarText: &6Welcome to the server name
+#How mutch time the BossBar stays
+    BossBarTime: 9
+#______________________BOSSBAR END
+#______________________ENABLE DISABLE THINGS START
+#If example TabToggle is true the tab will be enable else if its false it will disable the tab
+#Please restart your server after editing this
+    TabToggle: true
+    ScoreboardToggle: true
+    ChatFilterToggle: true
+    EconomyToggle: true
+    LevelToggle: true
+#______________________ENABLE DISABLE THINGS END
+#______________________EMOTES START
+#Customise the /emote
+#NOTE: You cannot add new emotes here, that's in the code. (ONLY EDIT THE CODE IF YOU KNOW WHAT YOU ARE DOING!)
+    EmoteSad: (╥_╥)
+    EmoteFun: ｡◕‿◕｡
+    EmoteMad: (≖ ‿ ≖)
+    EmoteShrug: ¯\_(ツ)_/¯
+    EmoteTableFlip: (╯°□°）╯︵ ┻━┻
+    EmoteGlasses: (⌐■_■)
+    EmoteSmug: (¬‿¬)
+    EmoteTired: (ˉ﹃ˉ)
+    EmoteHeart: ♡(◡‿◡)
+    EmoteDollar: [̲̅$̲̅(̲̅ ͡° ͜ʖ ͡°̲̅)̲̅$̲̅]
+    EmoteWhy: (｢•-•)｢ ʷʱʸ?
+    EmoteCat: (＾• ω •＾)
+    EmoteDog: U・ᴥ・U
+    EmoteBunny: (^ × ^)
+    EmoteBird: ヾ(￣◇￣)ノ〃
+    EmoteSpider: /╲/\( •̀ ω •́ )/\╱\
+    EmoteRifle: ( ´-ω･)︻┻┳══━一
+    EmoteMagic: ( ￣□￣)o━━━━☆
+    EmoteMusic: (˘ɜ˘)♬♪♫
+    EmoteCry: (;´༎ຶٹ༎ຶ`)
+
+#______________________EMOTES END
+#______________________PERMISSIONS START
+#Here you can edit the permissions
+    SethomePerm: skessentials.sethome
+    DelhomePerm: skessentials.delhome
+    HomePerm: skessentials.home
+    SetspawnPerm: skessentials.setspawn
+    DelspawnPerm: skessentials.delspawn
+    SpawnPerm: skessentials.spawn
+    FriendPerm: skessentials.friend
+    EmotesPerm: skessentials.emote
+    CommunicatePerm: skessentials.communicate
+    JoinsPerm: skessentials.joins
+    UniqueJoinsPerm: skessentials.uniquejoins
+    EssentialsPerm: skessentials.essentials
+    ArmorPerm: skessentials.armor
+    SetwaypointPerm: skessentials.setwaypoint
+    DelwaypointPerm: skessentials.delwaypoint
+    WaypointPerm: skessentials.waypoint
+    ToolPerm: skessentials.tool
+    EnderchestPerm: skessentials.enderchest
+    GmcPerm: skessentials.gmc
+    GmsPerm: skessentials.gms
+    GmaPerm: skessentials.gma
+    GmspPerm: skessentials.gmsp
+    SunPerm: skessentials.sun
+    WebsitePerm: skessentials.website
+    DiscordPerm: skessentials.discord
+    VoidPerm: random.void
+    TntbombPerm: random.tntbomb
+    SayasPerm: skessentials.sayas
+    NicknamePerm: skessentials.nickname
+    FreezePerm: random.freeze
+    UnfeezePerm: random.unfreeze
+    UltraspeedOnPerm: random.ultraspeedon
+    UltraspeedOffPerm: random.ultraspeedoff
+    HealPerm: skessentials.heal
+    FeedPerm: skessentials.feed
+    ClearchatPerm: skessentials.clearchat
+    PayPerm: skessentials.pay
+    BalancePerm: skessentials.balance
+    AddmoneyPerm: skessentials.addmoney
+    SetmoneyPerm: skessentials.setmoney
+    OfflinetpPerm: offlinetp
+    ResetJoinsPerm: resetjoins
+    ResetUniqueJoinsPerm: resetuniquejoins
+    DayPerm: skessentials.day
+    NightPerm: skessentials.night
+    OnlinePerm: skessentials.online
+    SellPerm: skessentials.sell
+    ResetMoneyPerm: skessentials.resetmoney
+    RulesPerm: skessentials.rules
+    SudoPerm: skessentials.sudo
+    ShopPerm: skessentials.shop
+    LevelPerm: skessentials.level
+    InvseePerm: skessentials.invsee
+#______________________PERMISSIONS END
+#______________________NO PERMISSION MESSAGE START
+#What message it sends you when you dont have the permission
+    PermMsg: &cYou do not have permission to use this command!
+#______________________NO PERMISSION MESSAGE END
+#______________________ECONOMY CONFIG START
+#How mutch money you start with on your first join of the server
+    StartEconomy: 100
+    SellPrice: 5
+#______________________ECONOMY CONFIG END
+#______________________SOUNDS START
+    SoundAccept: block.note_block.pling
+    SoundDenied: block.note_block.bass
+    VolumeSound: 1
+#______________________SOUNDS END
+#______________________RULES START
+#You can't add lines please ask our team on our gmail for help for us to add lines to it!
+    Rules1: - Common sens
+    Rules2: - Respect players
+    Rules3: - No cheating
+    Rules4: - Idk
+    Rules5: - I still don't know
+#______________________RULES END
+#______________________SHOP START
+    ShopGrassBlock: grass block
+    ShopBlockStone: stone
+    ShopBlockSprucePlank: spruce plank
+    ShopBlockOakPlank: oak plank
+    ShopBlockGrassBlock: grass block
+    ShopBlockBrichPlank: birch plank
+    ShopBlockJunglePlank: jungle plank
+    ShopBlockAcaciaPlank: acacia plank
+    ShopBlockDarkOakPlank: dark oak plank
+    ShopBlockCrimsonPlank: crimson plank
+    ShopBlockWarpedPlank: warped plank
+    ShopBlockGranite: granite
+    ShopBlockDiorite: diorite
+    ShopBlockAndesite: andesite
+    ShopBlockPolishedGranite: polished granite
+    ShopBlockPolishedDiorite: polished diorite
+    ShopBlockPolishedAndesite: polished andesite
+    ShopBlockDirt: dirt
+    ShopBlockCobblestone: cobblestone
+    ShopBlockSand: sand
+#Sell prices
+    SellPriceGrassBlock: 5
+    SellPriceStone: 5
+    SellPriceAcaciaPlank: 5
+    SellPriceBirchPlank: 5
+    SellPriceJunglePlank: 5
+    SellPriceOakPlank: 5
+    SellPriceSprucePlank: 5
+    SellPriceDarkOakPlank: 5
+    SellPriceCrimsonPlank: 5
+    SellPriceWarpedPlank: 5
+    SellPriceGranite: 5
+    SellPriceDiorite: 5
+    SellPriceAndesite: 5
+    SellPricePolishedGranite: 5
+    SellPricePolishedDiorite: 5
+    SellPricePolishedAndesite: 5
+    SellPriceDirt: 5
+    SellPriceCobblestone: 5
+    SellPriceSand: 5
+#Currency
+    Currency: $
+#______________________SHOP END
+#______________________LEVEL START
+    XPStone: 1
+    XPGranite: 1
+    XPDiorite: 1
+    XPAndesite: 1
+    XPCoal: 2
+    XPIron: 3
+    XPCopper: 2
+    XPGold: 4
+    XPRedstone: 2
+    XPEmerald: 6
+    XPDiamond: 5
+    XPNetherGold: 4
+    XPNetherQuartz: 3
+    LevelDifficultyUpgrade: 25
+    LevelStartDifficulty: 100
+#______________________LEVEL END
+#______________________COMMANDS START
+    SudoCommand: /sudo
+    RulesCommand: /rules
+    SellCommand: /sell
+    ShopCommand: /shop
+    LevelCommand: /level
+    ResetMoneyCommand: /resetmoney
+    PayCommand: /pay
+    AddMoneyCommand: /addmoney
+    SetMoneyCommand: /setmoney
+    BalanceCommand: /balance
+    MoneyCommand: /money
+    BalCommand: /bal
+    OnlineCommand: /online
+    OfflineTpCommand: /offlinetp
+    SethomeCommand: /sethome
+    DelHomeCommand: /delhome
+    HomeCommand: /home
+    SetspawnCommand: /setspawn
+    DelspawnCommand: /delspawn
+    SpawnCommand: /spawn
+    FriendCommand: /friend
+    EmoteCommand: /emote
+    CommunicateCommand: /communicate
+    ResetJoinsCommand: /resetjoins
+    ResetUniqueJoinCommand: /resetuniquejoins
+    JoinsCommand: /joins
+    UniqueJoinsCommand: /uniquejoins
+    EssentialsCommand: /essentials
+    ArmorCommand: /armor
+    SetWayPointCommand: /setwaypoint
+    DelWayPointCommand: /delwaypoint
+    WayPointCommand: /waypoint
+    ToolCommand: /tool
+    EnderChestCommand: /enderchest
+    GmcCommand: /gmc
+    GmsCommand: /gms
+    GmaCommand: /gma
+    GmspCommand: /gmsp
+    DayCommand: /day
+    NightCommand: /night
+    SunCommand: /sun
+    VoidCommand: /void
+    TntBombCommand: /tntbomb
+    SayasCommand: /sayas
+    NicknameCommand: /nickname
+    FreezeCommand: /freeze
+    UnfreezeCommand: /unfreeze
+    UltraSpeedOnCommand: /ultraspeed
+    UltraSpeedOffCommand: /ultraspeedoff
+    HealCommand: /heal
+    FeedCommand: /feed
+    ClearChatCommand: /clearchat
+    InvseeCommand: /invsee
+#______________________COMMANDS END
+#______________________MESSAGES START
+    Msg1: &6Please use the command correctly: /sudo <Player> <Command>
+    Msg2: &6Succesfully selled
+    Msg3: &c&lYou don't have enough money!
+    Msg4: &a&lYOU JUST LEVEL UP!
+    Msg5: &6Succesfully send %arg-2%{@Currency} to %arg-1%
+    Msg6: &6Succesfully send %arg-2%{@Currency} to %arg-1%
+    Msg7: &6The economy is disabled sorry!
+    Msg8: &6Please use the command correctly: /pay <Player> <Money>
+    Msg9: &6Succesfully added %arg-2%{@Currency} to the player: %arg-1%
+    Msg10: ______________________SKE JUST LOADED SUCCESFULLY!______________________
+    Msg11: &5&l|||&6&lSKE JUST LOADED SUCCESFULLY!&5&l|||
+#______________________MESSAGES END
+#______________________CUSTOM COMMAND START
+    CustomCommand: /customcommand
+    CustomCommandPerm: skessentials.customcommand
+#You can make you trigger so you can make a command so on
+#the execution of the command it will send "test" to the player that
+#executed your command. You can also make it so it executes an
+#command by doing "make player execute "/sell""
+    CustomCommandTrigger: send "Test" to player
+    CustomCommandTrigger2: make player execute "/sell"
+#______________________CUSTOM COMMAND END
+
+
+#NEED SOME HELP?
+#HERE IS SOME USEFUL INFORMATIONS
+
+#You can put this in the scoreboard: %{Essentials::Economy::%loop-player%}%
+
+
+
+
+
+#------------------------------------------------------------------------------------------
+
+#UNDER THIS THERE IS NO LONGER CONFIGURATION PLEASE DO NOT EDIT WHAT IS UNDER HERE THIS IS GOING TO BREAK THE SKRIPT THANKS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#DO NOT TOUCH THE FOLLOWING SKRIPT INCASE YOU KNOW WHAT YOUR DOING!
+#PLEASE DO NOT COPY THE SKRIPT TO MAKE YOUR OWN OR OTHER THINGS!
+
+#Sparky2you
+#Coolboy67YT
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#CUSTOM COMMAND
+command {@CustomCommand}:
+    permission: {@CustomCommandPerm}
+    trigger:
+        {@CustomCommandTrigger}
+        {@CustomCommandTrigger2}
+#CODING
+import:
+  java.lang.System
+  java.lang.String as JavaString
+  java.lang.Math
+  org.bukkit.Location
+  
+on load:
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("                                                                        ")
+    System.out.println("{@Msg10}")
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    send " " to all players
+    message "{@Msg11}" to all players
+    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+#Economy
+on quit:
+    set {Essentials::Offlinetp::%player%} to location of player
+on join:
+    clear {Essentials::Offlinetp::%player%}
+on first join:
+    add {@StartEconomy} to {Essentials::Economy::%player%}
+command {@SudoCommand} [<player>] [<string>]:
+    permission: {@SudoPerm}
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                make arg-1 execute "%arg-2%"
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    send "{@Msg1}" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@RulesCommand}:
+    permission: {@RulesPerm}
+    trigger:
+        send "{@Rules1}" to player
+        send "{@Rules2}" to player
+        send "{@Rules3}" to player
+        send "{@Rules4}" to player
+        send "{@Rules5}" to player
+command {@SellCommand}:
+    permission: {@SellPerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            set {Essentials::Name::%player%} to type of held item of player
+            set {Essentials::Holding::%player%} to amount of player's held item in player's inventory
+            add {Essentials::Holding::%player%}*{@SellPrice} to {Essentials::Economy::%player%}
+            remove {Essentials::Holding::%player%} of {Essentials::Name::%player%} from player's inventory
+            send "{@Msg2} %{Essentials::Holding::%player%}% %{Essentials::Name::%player%}%" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@ShopCommand}:
+    permission: {@ShopPerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            set {Essentials::Market::%player%} to a new chest inventory with 6 row with name "&6&lShop"
+            set {Essentials::Market::%player%::Blocks} to a new chest inventory with 6 row with name "&6&lShop :: Blocks"
+            set slot 0 of {Essentials::Market::%player%::Blocks} to {@ShopBlockGrassBlock} named "&2&l{@ShopBlockGrassBlock} {@SellPriceGrassBlock}{@Currency}" with lore "Purchase a {@ShopBlockGrassBlock}."
+            set slot 1 of {Essentials::Market::%player%::Blocks} to {@ShopBlockStone} named "&2&l{@ShopBlockStone} {@SellPriceStone}{@Currency}" with lore "Purchase a {@ShopBlockStone}."
+            set slot 2 of {Essentials::Market::%player%::Blocks} to {@ShopBlockOakPlank} named "&2&l{@ShopBlockOakPlank} {@SellPriceOakPlank}{@Currency}" with lore "Purchase an {@ShopBlockOakPlank}."
+            set slot 3 of {Essentials::Market::%player%::Blocks} to {@ShopBlockSprucePlank} named "&2&l{@ShopBlockSprucePlank} {@SellPriceSprucePlank}{@Currency}" with lore "Purchase an {@ShopBlockSprucePlank}."
+            set slot 4 of {Essentials::Market::%player%::Blocks} to {@ShopBlockBrichPlank} named "&2&l{@ShopBlockBrichPlank} {@SellPriceBirchPlank}{@Currency}" with lore "Purchase an {@ShopBlockBrichPlank}."
+            set slot 5 of {Essentials::Market::%player%::Blocks} to {@ShopBlockJunglePlank} named "&2&l{@ShopBlockJunglePlank} {@SellPriceJunglePlank}{@Currency}" with lore "Purchase an {@ShopBlockJunglePlank}."
+            set slot 6 of {Essentials::Market::%player%::Blocks} to {@ShopBlockAcaciaPlank} named "&2&l{@ShopBlockAcaciaPlank} {@SellPriceAcaciaPlank}{@Currency}" with lore "Purchase an {@ShopBlockAcaciaPlank}."
+            set slot 7 of {Essentials::Market::%player%::Blocks} to {@ShopBlockDarkOakPlank} named "&2&l{@ShopBlockDarkOakPlank} {@SellPriceDarkOakPlank}{@Currency}" with lore "Purchase an {@ShopBlockDarkOakPlank}."
+            set slot 8 of {Essentials::Market::%player%::Blocks} to {@ShopBlockCrimsonPlank} named "&2&l{@ShopBlockCrimsonPlank} {@SellPriceCrimsonPlank}{@Currency}" with lore "Purchase an {@ShopBlockCrimsonPlank}."
+            set slot 9 of {Essentials::Market::%player%::Blocks} to {@ShopBlockWarpedPlank} named "&2&l{@ShopBlockWarpedPlank} {@SellPriceWarpedPlank}{@Currency}" with lore "Purchase an {@ShopBlockWarpedPlank}."
+            set slot 10 of {Essentials::Market::%player%::Blocks} to {@ShopBlockGranite} named "&2&l{@ShopBlockGranite} {@SellPriceGranite}{@Currency}" with lore "Purchase an {@ShopBlockGranite}."
+            set slot 11 of {Essentials::Market::%player%::Blocks} to {@ShopBlockDiorite} named "&2&l{@ShopBlockDiorite} {@SellPriceDiorite}{@Currency}" with lore "Purchase an {@ShopBlockDiorite}."
+            set slot 12 of {Essentials::Market::%player%::Blocks} to {@ShopBlockAndesite} named "&2&l{@ShopBlockAndesite} {@SellPriceAndesite}{@Currency}" with lore "Purchase an {@ShopBlockAndesite}."
+            set slot 13 of {Essentials::Market::%player%::Blocks} to {@ShopBlockPolishedGranite} named "&2&l{@ShopBlockPolishedGranite} {@SellPricePolishedGranite}{@Currency}" with lore "Purchase an {@ShopBlockPolishedGranite}."
+            set slot 14 of {Essentials::Market::%player%::Blocks} to {@ShopBlockPolishedDiorite} named "&2&l{@ShopBlockPolishedDiorite} {@SellPricePolishedDiorite}{@Currency}" with lore "Purchase an {@ShopBlockPolishedDiorite}."
+            set slot 15 of {Essentials::Market::%player%::Blocks} to {@ShopBlockPolishedAndesite} named "&2&l{@ShopBlockPolishedAndesite} {@SellPricePolishedAndesite}{@Currency}" with lore "Purchase an {@ShopBlockPolishedAndesite}."
+            set slot 16 of {Essentials::Market::%player%::Blocks} to {@ShopBlockDirt} named "&2&l{@ShopBlockDirt} {@SellPriceDirt}{@Currency}" with lore "Purchase an {@ShopBlockDirt}."
+            set slot 17 of {Essentials::Market::%player%::Blocks} to {@ShopBlockCobblestone} named "&2&l{@ShopBlockCobblestone} {@SellPriceCobblestone}{@Currency}" with lore "Purchase an {@ShopBlockCobblestone}."
+            set slot 18 of {Essentials::Market::%player%::Blocks} to {@ShopBlockSand} named "&2&l{@ShopBlockSand} {@SellPriceSand}{@Currency}" with lore "Purchase an {@ShopBlockSand}."
+            set slot 49 of {Essentials::Market::%player%} to player's head named "&6&l%player%" with lore "&a&LBalance: &6&l%{Essentials::Economy::%player%}%{@Currency}"
+            set slot 48 and 50 of {Essentials::Market::%player%} to nether star named " "
+            set slot 53 of {Essentials::Market::%player%::Blocks} to barrier named "&cBack" with lore "Go back."
+            set slot 10 of {Essentials::Market::%player%} to {@ShopGrassBlock} named "&5&lBlocks" with lore "Here are the blocks."
+            set slot 0,1,2,3,4,5,6,7,8,9,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,51,52 and 53 of {Essentials::Market::%player%} to black stained glass pane named " "
+            open {Essentials::Market::%player%} to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+on inventory click:
+    if {Essentials::Economy} is true:
+        if name of event-inventory is "&6&lShop":
+            if index of event-slot = 10:
+                open {Essentials::Market::%player%::Blocks} to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 0 or 1 or 2 or 3 or 5 or 6 or 7 or 8 or 9 or 11 or 12 or 13 or 14 or 15 or 16 or 17 or 18 or 19 or 20 or 21 or 22 or 23 or 24 or 25 or 26 or 27 or 28 or 29 or 30 or 31 or 32 or 33 or 34 or 35 or 36 or 37 or 38 or 39 or 40 or 41 or 42 or 43 or 44 or 45 or 46 or 47 or 48 or 49 or 50 or 51 or 52 or 53:
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                open {Essentials::Market::%player%} to player
+        if name of event-inventory is "&6&lShop :: Blocks":
+            if index of event-slot = 53:
+                open {Essentials::Market::%player%} to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 0:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessGrassBlock}:
+                    remove {@SellPriceGrassBlock} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockGrassBlock}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceGrassBlock}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 1:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessStone}:
+                    remove {@SellPriceStone} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockStone}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceStone}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 2:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessOakPlank}:
+                    remove {@SellPriceOakPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockOakPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceOakPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 3:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessSprucePlank}:
+                    remove {@SellPriceSprucePlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockSprucePlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceSprucePlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 4:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessBirchPlank}:
+                    remove {@SellPriceBirchPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockBrichPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceBirchPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 5:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessJunglePlank}:
+                    remove {@SellPriceJunglePlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockJunglePlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceJunglePlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 6:
+                if {Essentials::Economy::%player%} is higher than {SellPricelessAcaciaPlank}:
+                    remove {@SellPriceAcaciaPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockAcaciaPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceAcaciaPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 7:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessDarkOakPlank}:
+                    remove {@SellPriceDarkOakPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockDarkOakPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceDarkOakPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 8:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessCrimsonPlank}:
+                    remove {@SellPriceCrimsonPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockCrimsonPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceCrimsonPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 9:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessWarpedPlank}:
+                    remove {@SellPriceWarpedPlank} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockWarpedPlank}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceWarpedPlank}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 10:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessGranite}:
+                    remove {@SellPriceGranite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockGranite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceGranite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 11:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessDiorite}:
+                    remove {@SellPriceDiorite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockDiorite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceDiorite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 12:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessAndesite}:
+                    remove {@SellPriceAndesite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockAndesite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceAndesite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 13:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessPolishedGranite}:
+                    remove {@SellPricePolishedGranite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockPolishedGranite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPricePolishedGranite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 14:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessPolishedDiorite}:
+                    remove {@SellPricePolishedDiorite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockPolishedDiorite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPricePolishedDiorite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 15:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessPolishedAndesite}:
+                    remove {@SellPricePolishedAndesite} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockPolishedAndesite}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPricePolishedAndesite}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 16:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessDirt}:
+                    remove {@SellPriceDirt} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockDirt}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceDirt}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 17:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessCobblestone}:
+                    remove {@SellPriceCobblestone} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockCobblestone}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceCobblestone}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+            if index of event-slot = 18:
+                if {Essentials::Economy::%player%} is higher than {SellPriceLessSand}:
+                    remove {@SellPriceSand} from {Essentials::Economy::%player%}
+                    give player a {@ShopBlockSand}
+                    open {Essentials::Market::%player%::Blocks} to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if {Essentials::Economy::%player%} is less than {@SellPriceSand}:
+                        send "{@Msg3}" to player
+                        close player's inventory
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+every second:
+    set {SellPriceLessGrassBlock} to {@SellPriceGrassBlock}-1
+    set {SellPriceLessStone} to {@SellPriceStone}-1
+    set {SellPriceLessOakPlank} to {@SellPriceOakPlank}-1
+    set {SellPriceLessSprucePlank} to {@SellPriceSprucePlank}-1
+    set {SellPriceLessBirchPlank} to {@SellPriceBirchPlank}-1
+    set {SellPriceLessJunglePlank} to {@SellPriceJunglePlank}-1
+    set {SellPriceLessAcaciaPlank} to {@SellPriceAcaciaPlank}-1
+    set {SellPriceLessDarkOakPlank} to {@SellPriceDarkOakPlank}-1
+    set {SellPriceLessCrimsonPlank} to {@SellPriceCrimsonPlank}-1
+    set {SellPriceLessWarpedPlank} to {@SellPriceWarpedPlank}-1
+    set {SellPriceLessGranite} to {@SellPriceGranite}-1
+    set {SellPriceLessDiorite} to {@SellPriceDiorite}-1
+    set {SellPriceLessAndesite} to {@SellPriceAndesite}-1
+    set {SellPriceLessPolishedGranite} to {@SellPricePolishedGranite}-1
+    set {SellPriceLessPolishedDiorite} to {@SellPricePolishedDiorite}-1
+    set {SellPriceLessPolishedAndesite} to {@SellPricePolishedAndesite}-1
+    set {SellPriceLessDirt} to {@SellPriceDirt}-1
+    set {SellPriceLessCobblestone} to {@SellPriceCobblestone}-1
+    set {SellPriceLessSand} to {@SellPriceSand}-1
+on mine of stone:
+    if {Essentials::Rank} is true:
+        add {@XPStone} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of granite:
+    if {Essentials::Rank} is true:
+        add {@XPGranite} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of andesite:
+    if {Essentials::Rank} is true:
+        add {@XPAndesite} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of diorite:
+    if {Essentials::Rank} is true:
+        add {@XPDiorite} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of coal ore or deepslate coal ore:
+    if {Essentials::Rank} is true:
+        add {@XPCoal} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of iron ore or deepslate iron ore:
+    if {Essentials::Rank} is true:
+        add {@XPIron} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of copper ore or deepslate copper ore:
+    if {Essentials::Rank} is true:
+        add {@XPCopper} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of gold ore or deepslate gold ore:
+    if {Essentials::Rank} is true:
+        add {@XPGold} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of redstone ore or deepslate redstone ore:
+    if {Essentials::Rank} is true:
+        add {@XPRedstone} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of emerald ore or deepslate emerald ore:
+    if {Essentials::Rank} is true:
+        add {@XPEmerald} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of diamond ore or deepslate diamond ore:
+    if {Essentials::Rank} is true:
+        add {@XPDiamond} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of nether gold ore:
+    if {Essentials::Rank} is true:
+        add {@XPNetherGold} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+on mine of nether quartz ore:
+    if {Essentials::Rank} is true:
+        add {@XPNetherQuartz} to {Essentials::XP::%player%}
+        send action bar "&a&l%{Essentials::XP::%player%}% &8&l/ &6&l%{Essentials::XPMAX::%player%}%" to player
+every second:
+    if {Essentials::Rank} is true:
+        loop all players:
+            if {Essentials::XP::%loop-player%} is higher than {Essentials::XPMAX::%loop-player%}:
+                clear {Essentials::XP::%loop-player%}
+                add 1 to {Essentials::Level::%loop-player%}
+                add {@LevelDifficultyUpgrade} to {Essentials::XPMAX::%loop-player%}
+                send action bar "{@Msg4}" to loop-player
+every second:
+    if {Essentials::Rank} is true:
+        loop all players:
+            if {Essentials::XPMAX::%loop-player%} is not set:
+                add {@LevelStartDifficulty} to {Essentials::XPMAX::%loop-player%}
+on chat:
+    if {Essentials::Rank} is true:
+        cancel event
+        Send "&6&lLevel: %{Essentials::Level::%player%}% &5| &f%player%&7: &f%message%" to all players
+command {@LevelCommand}:
+    permission: {@LevelPerm}
+    trigger:
+        if {Essentials::Rank} is true:
+            send "%{Essentials::Level::%player%}%" to player
+every second:
+    if {Essentials::Rank} is true:
+        loop all players:
+            if {Essentials::Level::%loop-player%} is not set:
+                set {Essentials::Level::%loop-player%} to 0
+command {@ResetMoneyCommand} [<player>]:
+    permission: {@ResetMoneyPerm}
+    trigger:
+        if arg 1 is set:
+            clear {Essentials::Economy::%arg-1%}
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@InvseeCommand} [<player>]:
+    permission: {@InvseePerm}
+    trigger:
+        open arg-1's inventory to player
+command {@PayCommand} [<player>] [<number>]:
+    permission: {@PayPerm}
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                if {Essentials::Economy} is true:
+                    if {Essentials::Economy::%player%} is higher than arg-2:
+                        remove arg-2 from {Essentials::Economy::%player%}
+                        add arg-2 to {Essentials::Economy::%arg-1%}
+                        send "{@Msg5}" to player
+                        send "{@Msg6}" to arg-1
+                        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+                    else:
+                        if {Essentials::Economy::%player%} is false:
+                            send "{@Msg7}" to player
+                            play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                        else:
+                            if arg 1 is not set:
+                                if arg 2 is not set:
+                                    send "{@Msg8}" to player
+                                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@AddMoneyCommand} [<player>] [<number>]:
+    permission: {@AddmoneyPerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            add arg-2 to {Essentials::Economy::%arg-1%}
+            send "{@Msg9}" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                if arg 2 is not set:
+                    send "&6Please use the command correctly: /addmoney <Player> <Money>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@SetMoneyCommand} [<player>] [<number>]:
+    permission: {@SetmoneyPerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            clear {Essentials::Economy::%arg-1%}
+            add arg-2 to {Essentials::Economy::%arg-1%}
+            send "&6Succesfully set %arg-1%'s money to %arg-2%" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::Economy} is false:
+                send "&6The economy is disabled sorry!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@BalanceCommand}:
+    permission: {@BalancePerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            send "&6Your current balance is: %{Essentials::Economy::%player%}%{@Currency}" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@MoneyCommand}:
+    permission: {@BalancePerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            send "&6Your current balance is: %{Essentials::Economy::%player%}%{@Currency}" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@BalCommand}:
+    permission: {@BalancePerm}
+    trigger:
+        if {Essentials::Economy} is true:
+            send "&6Your current balance is: %{Essentials::Economy::%player%}%{@Currency}" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+#On
+on chat:
+    set message format to "<%{Essentials::%player%}%> %message%"
+on first join:
+    set {Essentials::%player%} to "%player%"
+on join:
+	create bossbar titled "{@BossBarText}" and id "BossBar" for player with progress 100 with colors blue
+	wait {@BossBarTime} seconds
+	remove bossbar "BossBar"
+on load:
+    set {Essentials::Tab} to {@TabToggle}
+    set {Essentials::Scoreboard} to {@ScoreboardToggle}
+    set {Essentials::ChatFilter} to {@ChatFilterToggle}
+    set {Essentials::Economy} to {@EconomyToggle}
+    set {Essentials::Rank} to {@LevelToggle}
+every second:
+    if {Essentials::Tab} is true:
+        loop all players:
+            set {_header} to "{@TabHeader}"
+            set {_footer} to "{@TabFooter}"
+            set tab header to {_header} and footer to {_footer} for loop-player
+            wait 1 second
+on join:
+    wait 1 second
+    make player execute "/spawn"
+on first join:
+    wait 1 second
+    make player execute "/spawn"
+on join:
+    wait 1 second
+    teleport player to {Essentials::Spawn}
+on first join:
+    wait 1 second
+    teleport player to {Essentials::Spawn}
+on respawn:
+    teleport player to {Essentials::Spawn}
+on respawn:
+    make player execute "/spawn"
+on first join:
+    set {Essentials::Scoreboard::%player%} to true
+every second:
+    if {Essentials::Scoreboard} is true:
+        loop all players:
+            wipe loop-player's sidebar
+            set name of sidebar of loop-player to "{@Title}"
+            set score "{@Line1}" in sidebar of loop-player to 8
+            set score "{@Line2}" in sidebar of loop-player to 7
+            set score "{@Line3}" in sidebar of loop-player to 6
+            set score "{@Line4}" in sidebar of loop-player to 5
+            set score "{@Line5}" in sidebar of loop-player to 4
+            set score "{@Line6}" in sidebar of loop-player to 3
+            set score "{@Line7}" in sidebar of loop-player to 2
+            set score "{@Line8}" in sidebar of loop-player to 1
+on first join:
+    add 1 to {UniqueJoins}
+on join:
+    add 1 to {Joins}
+on join:
+    if player's name contains "{@BedrockNameChange}":
+        send "{@BedrockMsg}" to all players
+on join:
+    if player has played before:
+        set join message to "{@JoinMsg}"
+    else:
+        set join message to "{@FirstJoinMsg}"
+on quit:
+    set quit message to "{@QuitMsg}"
+on chat:
+    if {Essentials::ChatFilter} is true:
+        replace all "Nigger" in message with "{@Censored}"
+        replace all "Niggers" in message with "{@Censored}"
+        replace all "Fuck" in message with "{@Censored}"
+        replace all "Dick" in message with "{@Censored}"
+        replace all "Pussy" in message with "{@Censored}"
+        replace all "Shit" in message with "{@Censored}"
+        replace all "Fucker" in message with "{@Censored}"
+        replace all "Bitch" in message with "{@Censored}"
+        replace all "Pornhub" in message with "{@Censored}"
+        replace all "Ass" in message with "{@Censored}"
+        replace all "MotherFucker" in message with "{@Censored}"
+#Commands
+command {@OnlineCommand}:
+    permission: {@OnlinePerm}
+    trigger:
+        send "&6There is: %all players% online right now" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@OfflineTpCommand} [<offline player>]:
+    permission: {@OfflinetpPerm}
+    trigger:
+        if {Essentials::Offlinetp::%arg-1%} is set:
+            teleport player to {Essentials::Offlinetp::%arg-1%}
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::Offlinetp::%arg-1%} is not set:
+                send "&6Player is online use the command: /tp %player% %arg-1%" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@SethomeCommand}:
+    permission: {@SethomePerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::%player%::Home} is not set:
+            set {Essentials::%player%::Home} to location of player
+            send "&6Set your home!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::%player%::Home} is set:
+                send "&6Use the command /delhome to delete you home!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@DelHomeCommand}:
+    permission: {@DelhomePerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::%player%::Home} is set:
+            clear {Essentials::%player%::Home}
+            send "&6Succesfully deleted you home!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::%player%::Home} is not set:
+                send "&6Please set a home first!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@HomeCommand}:
+    permission: {@HomePerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::%player%::Home} is set:
+            teleport player to {Essentials::%player%::Home}
+            send "&6Welcome back home!" to players
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::%player%::Home} is not set:
+                send "&6You dont have a home please set one first!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@SetspawnCommand}:
+    permission: {@SetspawnPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::Spawn} is not set:
+            set {Essentials::Spawn} to location of player
+            send "&6Set spawn!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::Spawn} is set:
+                send "&6Please use /delspawn instead!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@DelspawnCommand}:
+    permission: {@DelspawnPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::Spawn} is set:
+            clear {Essentials::Spawn}
+            send "&6Succesfully cleared the spawn!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::Spawn} is not set:
+                send "&6Please set the spawn first!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@SpawnCommand}:
+    permission: {@SpawnPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if {Essentials::Spawn} is set:
+            teleport player to {Essentials::Spawn}
+            send "&6Welcome back to the spawn!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if {Essentials::Spawn} is not set:
+                send "&6The spawn is not set please contact an administator!" to player
+                play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@FriendCommand} [<text>] [<player>]:
+    aliases: /friends, /f
+    permission: {@FriendPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is "add":
+            if arg 1 is set:
+                if arg 2 is set:
+                    set {Essentials::%player%::%arg-2%} to true
+        if arg 1 is "remove" or "delete" or "del":
+            if arg 1 is set:
+                if arg 2 is set:
+                    if {Essentials::%player%::%arg-2%} is true:
+                        set {Essentials::%player%::%arg-2%} to false
+        if arg 1 is "list":
+            if arg 1 is set:
+                if arg 2 is not set:
+                    send "&6This section is still in dev!" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                else:
+                    if arg 1 is not set:
+                        send "&6Please use one of those following commands: /friend <add|del|list>" to player
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                    if arg 2 is not set:
+                        send "&6Please select a player: /friend <add|del|list> <player>" to player
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                    if arg 1 is not set:
+                        if arg 2 is not set:
+                            send "&6Please use the command correctly: /friend <add|del|list> <player>" to player
+                            play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@EmoteCommand} [<text>]:
+    aliases: /feelings, /feeling, /emotes
+    permission: {@EmotesPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is "sad" or "not happy" or "nothappy":
+            send "[%player%]: {@EmoteSad}" to all players
+        if arg 1 is "happy" or "fun" or "cool" or "super":
+            send "[%player%]: {@EmoteFun}" to all players
+        if arg 1 is "mad" or "revenge" or "bad":
+            send "[%player%]: {@EmoteMad}" to all players
+        if arg 1 is "shrug" or "idk" or "idontknow":
+            send "[%player%]: {@EmoteShrug}" to all players
+        if arg 1 is "tableflip" or "table" or "flip" or "table flip" or "rage":
+            send "[%player%]: {@EmoteTableFlip}" to all players
+        if arg 1 is "glasses" or "glass" or "cool" or "sunglass" or "sunglasses":
+            send "[%player%]: {@EmoteGlasses}" to all players
+        if arg 1 is "smug":
+            send "[%player%]: {@EmoteSmug}" to all players
+        if arg 1 is "tired" or "sleeping" or "sleepy" or "sleep":
+            send "[%player%]: {@EmoteTired}" to all players
+        if arg 1 is "love" or "heart" or "smile with heart":
+            send "[%player%]: {@EmoteHeart}" to all players
+        if arg 1 is "secret123ABCCoolboyIsAwesomeHehehe":
+            send "[%player%]: (͠≖ ͜ʖ͠≖)" to all players 
+        if arg 1 is "dollar" or "money" or "dollar bill" or "$":
+            send "[%player%]: {@EmoteDollar}" to all players
+        if arg 1 is "why" or "ask why":
+            send "[%player%]: {@EmoteWhy}" to all players
+        if arg 1 is "Cat" or "meow cat":
+            send "[%player%]: {@EmoteCat}" to all players
+        if arg 1 is "cry" or "crying":
+            send "[%player%]: {@EmoteCry}" to all players
+        if arg 1 is "dog" or "doggo" or "doggy":
+            send "[%player%]: {@EmoteDog}" to all players
+        if arg 1 is "bunny" or "bunny rabbit" or "rabbit":
+            send "[%player%]: {@EmoteBunny}" to all players
+        if arg 1 is "bird" or "birdie":
+            send "[%player%]: {@EmoteBird}" to all players
+        if arg 1 is "spider":
+            send "[%player%]: {@EmoteSpider}" to all players
+        if arg 1 is "rifle" or "gun":
+            send "[%player%]: {@EmoteRifle}" to all players
+        if arg 1 is "magic" or "magic wand":
+            send "[%player%]: {@EmoteMagic}" to all players
+        if arg 1 is "music" or "jam":
+            send "[%player%]: {@EmoteMusic}" to all players
+        
+command {@CommunicateCommand} [<text>] [<player>]:
+    aliases: /c
+    permission: {@CommunicatePerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                send "&6%player% Says: &c%arg-1%" to arg-2
+            else:
+                if arg 1 is not set:
+                    send "/c <Msg> <Player>" to player
+                if arg 2 is not set:
+                    send "/c <Msg> <Player>" to player
+command {@ResetJoinsCommand}:
+    permission: {@ResetJoinsPerm}
+    trigger:
+        clear {Joins}
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@ResetUniqueJoinCommand}:
+    permission: {@ResetUniqueJoinsPerm}
+    trigger:
+        clear {UniqueJoins}
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@JoinsCommand}:
+    permission: {@JoinsPerm}
+    permission message: {@PermMsg}
+    trigger:
+        send "&6There are %{Joins}% joins" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@UniqueJoinsCommand}:
+    permission: {@UniqueJoinsPerm}
+    permission message: {@PermMsg}
+    trigger:
+        send "&6There are %{UniqueJoins}% unique joins" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@EssentialsCommand}:
+    permission: {@EssentialsPerm}
+    permission message: {@PermMsg}
+    trigger:
+        send "&6/emote" to player
+        send "&6/friend" to player
+        send "&6/spawn | /delspawn | /setspawn" to player
+        send "&6/communicate" to player
+        send "&6/sethome | /delhome | /home" to player
+        send "&6/joins" to player
+        send "&6/uniquejoins" to player
+        send "&6/essentials" to player
+        send "&6/armor" to player
+        send "&6/setwaypoint | /delwaypoint | /waypoint" to player
+        send "&6/tool" to player
+        send "&6/enderchest" to player
+        send "&6/gmc | /gma | /gms | /gmsp" to player
+        send "&6/sun" to player
+        send "&6/plugins | /pl" to player
+        send "&6/help | /?" to player
+        send "&6/website" to player
+        send "&6/discord" to player
+        send "&6/void" to player
+        send "&6/tntbomb" to player
+        send "&6/sayas" to player
+        send "&6/nickname" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@ArmorCommand} [<text>]:
+    permission: {@ArmorPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is "diamond":
+            if arg 1 is set:
+                give player diamond helmet
+                give player diamond chestplate
+                give player diamond leggings
+                give player diamond boots
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "gold":
+            if arg 1 is set:
+                give player gold helmet
+                give player gold chestplate
+                give player gold leggings
+                give player gold boots
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "netherite":
+            if arg 1 is set:
+                give player netherite helmet
+                give player netherite chestplate
+                give player netherite leggings
+                give player netherite boots
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "iron":
+            if arg 1 is set:
+                give player iron helmet
+                give player iron chestplate
+                give player iron leggings
+                give player iron boots
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "leather":
+            if arg 1 is set:
+                give player leather helmet
+                give player leather chestplate
+                give player leather leggings
+                give player leather boots
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    send "&6Please use the command correctly: /armor <Ore type>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@SetWayPointCommand} [<text>]:
+    aliases: /swp
+    permission: {@SetwaypointPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            if {Essentials::%player%::%arg-1%::waypoint} is not set:
+                set {Essentials::%player%::%arg-1%::waypoint} to location of player
+                send "&6Set the waypoint!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if {Essentials::%player%::%arg-1%::waypoint} is set:
+                    send "&6Please use the /delwaypoint instead!" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                if arg 1 is not set:
+                    send "&6Please use the command like this: /setwaypoint <name>" to player
+                    play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@DelWayPointCommand} [<text>]:
+    aliases: /dwp
+    permission: {@DelwaypointPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            if {Essentials::%player%::%arg-1%::waypoint} is set:
+                clear {Essentials::%player%::%arg-1%::waypoint}
+                send "&6Deleted the waypoint!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    send "&6Please use the command like this: /delwaypoint <name>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                if {Essentials::%player%::%arg-1%::waypoint} is not set:
+                    send "&6Please set a home first!" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@WayPointCommand} [<text>]:
+    aliases: /wp
+    permission: {@WaypointPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            if {Essentials::%player%::%arg-1%::waypoint} is set:
+                teleport player to {Essentials::%player%::%arg-1%::waypoint}
+                send "&6Welcome back to you waypoint!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    send "&6Please use the command this way: /waypoint <Name>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                if {Essentials::%player%::%arg-1%::waypoint} is not set:
+                    send "&6Please set this waypoint first!" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@ToolCommand} [<text>]:
+    aliases: /tools
+    permission: {@ToolPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is "diamond":
+            if arg 1 is set:
+                give player diamond sword
+                give player diamond pickaxe
+                give player diamond axe
+                give player diamond shovel
+                give player diamond hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "gold":
+            if arg 1 is set:
+                give player gold sword
+                give player gold pickaxe
+                give player gold axe
+                give player gold shovel
+                give player gold hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "iron":
+            if arg 1 is set:
+                give player iron sword
+                give player iron pickaxe
+                give player iron axe
+                give player iron shovel
+                give player iron hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "wood" or "wooden":
+            if arg 1 is set:
+                give player wooden sword
+                give player wooden pickaxe
+                give player wooden axe
+                give player wooden shovel
+                give player wooden hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "stone" or "cobblestone":
+            if arg 1 is set:
+                give player stone sword
+                give player stone pickaxe
+                give player stone axe
+                give player stone shovel
+                give player stone hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        if arg 1 is "netherite":
+            if arg 1 is set:
+                give player netherite sword
+                give player netherite pickaxe
+                give player netherite axe
+                give player netherite shovel
+                give player netherite hoe
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    send "&6/tool <Armor>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@EnderChestCommand}:
+    permission: {@EnderchestPerm}
+    permission message: {@PermMsg}
+    trigger:
+        open the player's ender chest to the player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@GmcCommand} [<player>]:
+    permission: {@GmcPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            set arg-1's gamemode to creative
+            send "&6Set %arg-1%'s gamemode to creative!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                set player's gamemode to creative
+                send "&6Set %player%'s gamemode to creative!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@GmsCommand} [<player>]:
+    permission: {@GmsPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            set arg-1's gamemode to survival
+            send "&6Set %arg-1%'s gamemode to survival!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                set player's gamemode to survival
+                send "&6Set %player%'s gamemode to survival!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@GmaCommand} [<player>]:
+    permission: {@GmaPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            set arg-1's gamemode to adventure
+            send "&6Set %arg-1%'s gamemode to adventure!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                set player's gamemode to adventure
+                send "&6Set %player%'s gamemode to adventure!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@GmspCommand} [<player>]:
+    permission: {@GmspPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            set arg-1's gamemode to spectator
+            send "&6Set %arg-1%'s gamemode to spectator!" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                set player's gamemode to spectator
+                send "&6Set %player%'s gamemode to spectator!" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@DayCommand}:
+    permission: {@DayPerm}
+    trigger:
+        set time to day
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@NightCommand}:
+    permission: {@NightPerm}
+    trigger:
+        set time to night
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@SunCommand}:
+    permission: {@SunPerm}
+    permission message: {@PermMsg}
+    trigger:
+        execute command "weather clear"
+        send "&6Set the weather to sun!" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command /plugins:
+    aliases: /pl
+    trigger:
+        send "{@PluginMsg}" to player
+command /help:
+    aliases: /?
+    trigger:
+        send "{@HelpMsg}" to player
+command /website:
+    permission: {@WebsitePerm}
+    permission message: {@PermMsg}
+    trigger:
+        send "&6Website - <link:{@WebsiteLink}>{@WebsiteClick}" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command /discord:
+    permission: {@DiscordPerm}
+    permission message: {@PermMsg}
+    trigger:
+        send "&6Discord - <link:{@DiscordLink}>{@DiscordClick}" to player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+
+
+
+#Random Things and CMDs - don't edit, thx
+command {@VoidCommand} [<player>]:
+    permission: {@VoidPerm}
+    permission message: {@PermMsg}
+    trigger:
+        teleport player to location at 0, -100, 0 in world "spawn"
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@TntBombCommand} [<player>]:
+    permission: {@TntbombPerm}
+    permission message: {@PermMsg}
+    trigger:
+        set {currentpos::%player%} to location of arg-1
+        spawn 1 primed TNT at {currentpos::%player%}
+command {@SayasCommand} [<player>] [<text>]:
+    permission: {@SayasPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            if arg 2 is set:
+                send "&f<%arg-1%> %arg-2%" to all players
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+            else:
+                if arg 1 is not set:
+                    if arg 2 is not set:
+                        send "&6Please use the command correctly: /sayas <Player> <Msg>" to player
+                        play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                if arg 1 is not set:
+                    send "&6Please use the command correctly: /sayas <Player> <Msg>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+                if arg 2 is not set:
+                    send "&6Please use the command correctly: /sayas <Player> <Msg>" to player
+                    play sound "{@SoundDenied}" at volume {@VolumeSound} at pitch 2 to player
+command {@NicknameCommand} [<text>]:
+    aliases: /nick
+    permission: {@NicknamePerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg 1 is set:
+            set {Essentials::%player%} to "%arg-1%"
+            send "&6Renamed as %{Essentials::%player%}%" to player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            if arg 1 is not set:
+                set {Essentials::%player%} to "%player%"
+                send "&6Renamed as %{Essentials::%player%}%" to player
+                play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@FreezeCommand} [<player>]:
+    permission: {@FreezePerm}
+    permission message: {@PermMsg}
+    trigger:
+        set arg-1's walk speed to 0
+        set {freezed::%player%} to true
+        set {Essentials::Freeze::%arg-1%} to true
+        set {Essentials::FreezePos::%arg-1%} to location of arg-1
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@UnfreezeCommand} [<player>]:
+    permission: {@UnfeezePerm}
+    permission message: {@PermMsg}
+    trigger:
+        set arg-1's walk speed to 0.2
+        set {freezed::%player%} to false
+        set {Essentials::Freeze::%arg-1%} to false
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+every second:
+    loop all players:
+        if {Essentials::Freeze::%loop-player%} is true:
+            teleport loop-player to {Essentials::FreezePos::%loop-player%}
+every second:
+    loop all players:
+        if {Essentials::Freeze::%loop-player%} is false:
+            if {Essentials::FreezePos::%loop-player%} is set:
+                clear {Essentials::FreezePos::%loop-player%}
+command {@UltraSpeedOnCommand} [<player>]:
+    permission: {@UltraspeedOnPerm}
+    permission message: {@PermMsg}
+    trigger:
+        set arg-1's walk speed to 6
+        set {ultraspeed::%player%} to true
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@UltraSpeedOffCommand} [<player>]:
+    permission: {@UltraspeedOffPerm}
+    permission message: {@PermMsg}
+    trigger:
+        set arg-1's walk speed to 0.2
+        set {ultraspeed::%player%} to false
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@HealCommand} [<player>]:
+    permission: {@HealPerm}
+    permission message: {@PermMsg}
+    trigger:
+        if arg-1 is not set:
+            set health of player to 10
+            feed player
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+        else:
+            set health of arg-1 to 10
+            feed arg-1
+            play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@FeedCommand}:
+    permission: {@FeedPerm}
+    permission message: {@PermMsg}
+    trigger:
+        feed player
+        play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+command {@ClearChatCommand}:
+	aliases: /cc
+	permission: {@ClearchatPerm}
+	permission message: {@PermMsg}
+	trigger:
+		play sound "{@SoundAccept}" at volume {@VolumeSound} at pitch 2 to player
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast " "
+		broadcast "&b&lChat has been cleared by %player%."

@@ -1,0 +1,83 @@
+# 
+# 
+# ##### #   #       #     # ##### ##### ##### ### ##### ##### #
+# #     #  #        #     # #     #     #      #  #     #   # #
+# #     # #         #     # #     #     #      #  #     #   # #
+# ##### ##   #####  #     # ##### ##### #####  #  ##### ##### #
+#     # # #         #     # #     #         #  #  #     #   # #
+#     # #  #        #     # #     #         #  #  #     #   # #
+# ##### #   #       ##### # #     ##### #####  #  ##### #   # #####
+
+#SK-Lifesteal is an addon for SKEssentials. 
+#Please check that you have SKE installed.
+
+
+#-----------------------#
+#     Manual Config     #
+#-----------------------#
+#                       #
+# Heart item (what player gets when using /extract)
+    HeartItem: diamond
+
+    Lore: Be careful with these...
+
+    HeartName: Heart
+#----------------------#
+# 0 heart config
+
+   #Availble arguments are spectator, ban, none
+    NoHearts: spectator
+#----------------------#
+
+
+
+
+
+
+
+
+
+
+#Ello mate, coolboy here. Don't touch the code below this if you are not an expert! You could maybe mess it up,
+#and nobody likes things that don't work, right?
+
+
+
+
+
+
+
+
+
+
+
+
+on death of a player:
+        if attacker is a player:
+            set {_attackerhealth} to attacker's max health
+            set {_victimhealth} to victim's max health
+            if {_victimhealth} <= 0:
+               send "This person is at 0 hearts, and has no hearts left." to attacker
+               stop
+        
+            set attacker's max health to ({_attackerhealth}+1)
+            set attacker's health to {_attackerhealth}
+            set victim's max health to ({_victimhealth}-1)
+
+command /resethealth:
+    trigger:
+        set player's max health to 10
+        set player's health to 10
+
+
+command /extract [<number>]:
+    trigger:
+        give player a {@HeartItem} named {@HeartName} with lore {@Lore}
+
+command /lifestealconfig
+    trigger:
+          send "You can't edit the config in-game, the config is in the SK-Lifesteal skript." to player
+
+  
+on load:
+    message "SK-Lifesteal sucessfully loaded!"

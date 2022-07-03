@@ -1,0 +1,25 @@
+  #######  #   #  #######
+  #        #  #   #
+  #        # #    #
+  #######  ##     #######
+       #  # #    #
+       #  #  #   #
+ #######  #   #  #######
+ #        GENS          #
+
+
+
+on place of diamond ore:
+    if name of player's held item is "&bDiamondGen":
+        if lore of player's held item is " ":
+            set {DiamondGen::%uuid of player%} to location of event-block
+            send action bar "&aPlaced a DiamondGen" to player
+on break of diamond ore:
+    if name of event-block is "&bDiamondGen":
+        clear {DiamondGen::%uuid of player%}
+        send action bar "&aRemoved the DiamondGen" to player
+command /gengive [<text>]:
+    permission: skegens.gengive
+    trigger:
+        if arg-1 is "diamond":
+            give player 1 diamond ore named "&bDiamondGen"
